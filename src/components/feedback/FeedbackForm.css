@@ -1,0 +1,188 @@
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: min(300px,70%);
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 10px;
+    padding-right: 10px;
+    color: #574707;
+    border: 1px solid #aeb99cd2;
+    border-radius: 5px;
+    gap: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    .cross{
+        align-self: flex-end;
+        height: 30px;
+        margin-bottom: 5px;
+        width: 30px;
+    }
+    .cross:hover{
+        cursor: pointer;
+    }
+    
+  }
+  .PSO{
+    font-size: 0.9rem;
+    color: #a02e2e;
+  }
+  .feedback-form {
+    height: calc(100% - 80px);
+    background-color: #e2eed250;
+    background-image: url("./output-onlinepngtools.png");
+    
+    padding: 40px 30px;
+    width: calc(100% - 60px);
+    position: relative;
+    overflow-y: auto;
+    h2{
+        color: #574707;
+        font-size: 39px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    label {
+      display: inline-block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .feedback-container{
+        margin-top: 30px;
+        min-height: 82vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }  
+    .feedback-container .input{
+        width: 400px;
+        height: 35px;
+        margin-top: 30px;
+        padding: 5px 10px;
+        border: 2px solid #494e4286 ;
+        font-size: 1.1rem;
+        background-color: rgba(247, 245, 228, 0.26);
+    }
+    .feedback-container textarea{
+        width: 400px;
+        height: 250px;
+        margin-top: 30px;
+        padding: 5px 10px;
+        border: 2px solid #494e4286 ;
+        font-size: 1.1rem;
+        background-color: rgba(247, 245, 228, 0.26);
+        
+    }
+    .feedback-container .input:focus,.feedback-container textarea:focus{
+        border: 2px solid #2d3029af ;
+        outline: none;
+
+    }
+
+    .uploadIm{
+        color: #241d03;
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .uploadImg,.expText{
+        color: #574707;
+        margin-right: 4px;
+    }
+    .uploadImg2{
+        display: inline-block;
+    }
+
+    .flex1{
+        margin-top: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .expText{
+        padding-top: 2px;
+    }
+   
+    .rating {
+        display: inline-block;
+        unicode-bidi: bidi-override;
+        direction: rtl;
+      }
+      
+      .rating input {
+        display: none;
+      }
+      
+      .rating label {
+        float: right;
+        padding: 0 1px;
+        color: #aaaaaa;
+      }
+      
+      .rating label:before {
+        content: '★';
+        cursor: pointer;
+        font-size: 24px;
+    }
+    
+    .rating input:checked ~ label {
+        color: #f39c12;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .feedBtn{
+        background-color: #ffcc0073;
+        color: #574707;
+        border: 2px solid #2d302952 ;
+        margin: auto;
+        width: 130px;
+        height: 30px;
+        padding: 5px;
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+      }
+      .feedBtn:hover{
+        cursor: pointer;
+      }
+      .feed-btn-c{
+        padding-top: 10px;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+      }
+      footer {
+        padding: 30px 15px 0px 15px;
+        text-align: center;
+        color: #413814;
+        font-size: 0.8rem;
+    }
+
+    .hr1 {
+        border: none;
+        margin-top: 30px;
+        height: 1px;
+        background: linear-gradient(to right, rgba(255, 255, 255, 0)0%, rgba(43, 68, 15, 0.3) 30%, rgba(43, 68, 15, 0.3) 70%, rgba(255, 255, 255, 0));
+    }
+      @media screen and (max-width: 600px) {
+        .feedback-container .input,.feedback-container textarea{
+            width:250px;
+        }
+      }
+      
+  }
+  

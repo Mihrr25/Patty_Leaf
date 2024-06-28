@@ -1,0 +1,241 @@
+.orderFood {
+    height: 100%;
+    background-color: #e2eed23a;
+    overflow: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 38px;
+        padding: 15px 0px;
+        background-color: #ffdce0d7;
+        color: #ff726e;
+    }
+    footer {
+        padding: 40px 15px 30px 15px;
+        text-align: center;
+        color: #413814;
+        font-size: 0.8rem;
+    }
+
+}
+.orderFood .hr11 {
+    /* border: 0.5px solid #e2eed23a; */
+    height: 1px;
+    width: 100%;
+    margin-top: 40px;
+}
+.orderFood .hr1 {
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0)0%, rgba(43, 68, 15, 0.3) 30%, rgba(43, 68, 15, 0.3) 70%, rgba(255, 255, 255, 0));
+}
+
+.order-head {
+    height: 50px;
+    width: 100%;
+    background-color: #ffdce0a4;
+    display: flex;
+    font-size: 1.6rem;
+
+    a{
+        text-decoration: none;
+        width: 25%;
+    }
+    
+}
+.order-head-block:hover {
+    background-color: #f8e1e3;
+    /* border: 2px solid #f2848269; */
+    cursor: pointer;
+}
+.order-head-block {
+    height: 50px;
+    /* border: 2px solid #f2848269; */
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    color: #ed7571;
+    font-weight: 600;
+
+}
+
+.menu-container {
+    width: 100%;
+    /* height: 100%; */
+}
+
+.menu-cont-head {
+    background-color: #fff8f0;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    font-size: 28px;
+    color: #e66863ec;
+    font-weight: 500;
+    /* color: #bd8b88; */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.menu-item-cont {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color: #000000e3;
+}
+
+.menu-item {
+    width: 45%;
+    padding: 15px 1% 15px 4%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.itemLeft {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+}
+.itemLeft button {
+    padding: 0px;
+    outline: none;
+    border: none;
+    padding-block: 0px;
+    padding-inline:0px;
+    height: 26px;
+    background: transparent;
+
+}
+
+.itemName {
+    display: flex;
+    align-content: center;
+    max-width: 100%;
+
+    img {
+        width: 17px;
+        height: 17px;
+        margin-right: 10px;
+    }
+}
+
+.itemRight {
+    width: calc(30% - 5px);
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 0px 0px 5px 5px;
+
+    img {
+        width: 60%;
+        object-fit: cover;
+    }
+}
+
+.itemDesc {
+    color: #000000ab;
+    margin-left: 25px;
+    width: calc(100% - 25px);
+    font-size: 0.8rem;
+}
+
+.itemRate {
+    margin-left: 25px;
+    width: calc(100% - 25px);
+    display: flex;
+    align-items: center;
+
+    .removeItem {
+        width: 20px;
+        height: 16px;
+        margin-left: 20px;
+        background-color: #e0e0e0;
+        /* Lighter gray background */
+        padding: 5px;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+    .addItem {
+        width: 20px;
+        height: 16px;
+        background-color: #e0e0e0;
+        /* Lighter gray background */
+        padding: 5px;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+
+    .qty {
+        width: 41px;
+        text-align: center;
+        color: #333;
+        background-color: #f0f0f0;
+        margin-left: 10px;
+        height: 24px;
+        /* padding: 5px; */
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-right: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .itemLeft {
+        font-size: 0.9rem;
+        gap: 5px;
+    }
+
+}
+@media screen and (max-width:1000px) {
+    .menu-item {
+        width: 95%;
+    }
+
+}
+
+@media screen and (max-width:750px) {
+
+    .order-head-block {
+        font-size: 1.3rem;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .itemLeft {
+        font-size: 0.8rem;
+        gap: 3px;
+        width: 60%;
+    }
+
+    .itemRight {
+        width: calc(40% - 10px)
+    }
+
+    .itemRight img {
+        width: 80%;
+    }
+
+    .order-head-block {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .order-head-block {
+        font-size: 0.9rem;
+    }
+}

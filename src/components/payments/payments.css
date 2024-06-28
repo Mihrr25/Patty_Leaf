@@ -1,0 +1,81 @@
+.payment {
+    height: calc(100% - 80px);
+    background-color: #e2eed250;
+    padding: 40px 30px;
+    width: calc(100% - 60px);
+    overflow-y: auto;
+}
+.paymentForm{
+    display: flex;
+    flex-direction: column  ;
+    width: 100%;
+    gap: 25px;
+    align-items: center;
+    min-height: 82%;
+    h2{
+        color: #574707;
+        font-size: 30px;
+        display: flex;
+        width: 70%;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .pQrCont{
+        width: min(350px, 80%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 7px;
+    }
+    .pQrCont img{
+        width: 100%;
+        object-fit: contain;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .uploadImg{
+        margin-bottom: 5px;
+    }
+    .uploadImg2{
+        text-align: center;
+    }
+    .uSec{
+        display: flex;
+        flex-direction: column;
+        max-width: 250px;
+    }
+    form .input{
+        width: 230px;
+        padding: 5px 10px;
+        height: 30px;
+        border: 2px solid #494e4286 ;
+        font-size: 1.1rem;
+        background-color: rgba(247, 245, 228, 0.26);
+    }
+    form button{
+        margin: auto;
+        width: 200px;
+        height: 30px;
+        padding: 5px;
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid #30312d62;
+        color: #1d1c1cb0;
+        background-color: #bbccad9d;
+        cursor: pointer;
+    }
+    @media screen and (max-width:600px) {
+        h2{
+            font-size: 22px;
+            width: 90%;
+        }
+    }
+  
+}

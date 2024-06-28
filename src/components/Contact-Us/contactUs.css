@@ -1,0 +1,107 @@
+.contact{
+    height: calc(100%);
+    background-color: #e2eed250;
+    background-image: url("./Restr/CP.png");
+    /* padding: 40px 30px; */
+    width: calc(100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto;
+    position: relative;
+}
+.contact .imgPanel{
+    width: 100%;
+    overflow: hidden;
+    height: 50%;
+}
+.popup-contact {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: min(300px,70%);
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    padding-top: 10px;
+    padding-right: 10px;
+    color: #574707;
+    border: 1px solid #aeb99cd2;
+    border-radius: 5px;
+    gap: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    .cross{
+        align-self: flex-end;
+        height: 30px;
+        margin-bottom: 5px;
+        width: 30px;
+    }
+    .cross:hover{
+        cursor: pointer;
+    }
+    
+  }
+.contact .container{
+    width: min(600px,95%);
+    margin: auto;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+
+    background-color: #ffffffd8;
+    h2{
+        height: 70px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 46px;
+        margin-top: 20px;
+    }
+    form{
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    input{
+        width: 75%;
+        height: 40px;
+        margin: auto;
+        border: 1px solid #30312d62;
+        background:transparent;
+        font-size: 1.3rem;
+        padding-left: 15px;
+        margin-bottom: 25px;
+    }
+    textarea{
+        width: 75%;
+        height: 150px;
+        margin: auto;
+        border: 1px solid #30312d62;
+        background:transparent;
+        font-size: 1.3rem;
+        padding-left: 15px;
+        padding-top: 5px;
+        margin-bottom: 25px;
+    }
+    .contactBtn{
+        height: 40px;
+        width: 50%;
+        justify-self: center;
+        border: 1px solid #30312d62;
+        font-size: 1.25rem;
+        color: #1d1c1cb0;
+        background-color: #bbccad9d;
+    }
+    .contactBtn:hover{
+        cursor: pointer;
+        background-color: #d7dfd0c0;
+    }
+    
+}

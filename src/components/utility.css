@@ -1,0 +1,36 @@
+.flex{
+    display: flex;
+}
+/* Apply scrollbar styles */
+::-webkit-scrollbar {
+    width: 10px; /* Width of the scrollbar */
+}
+
+/* Track (the area where the scrollbar runs) */
+::-webkit-scrollbar-track {
+    background-color: rgba(200, 198, 180, 0.9); /* Slightly darker shade */
+}
+
+/* Handle (the draggable part of the scrollbar) */
+::-webkit-scrollbar-thumb {
+    background-color: rgba(150, 148, 130, 0.9); /* Darker shade for the thumb */
+    border-radius: 2px; /* Rounded corners for the thumb */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(100, 98, 80, 0.9); /* Darker shade on hover */
+}
+
+/* Optional: Handle when being dragged */
+::-webkit-scrollbar-thumb:active {
+    background-color: rgba(100, 98, 80, 1); /* Even darker shade when active */
+}
+
+/* Optional: Corner (between vertical and horizontal scrollbar) */
+::-webkit-scrollbar-corner {
+    background-color: rgba(200, 198, 180, 0.9); /* Match track background */
+}
+html {
+    scroll-behavior: smooth;
+}

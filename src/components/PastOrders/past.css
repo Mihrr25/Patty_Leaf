@@ -1,0 +1,91 @@
+.pastOrders{
+    height: calc(100% - 80px);
+    width: calc(100% - 60px);
+    background-color: #e2eed23a;
+    padding: 40px 30px;
+    overflow-y: auto;
+    width: 100%;
+    h2{
+      color: #574707;
+        font-size: 48px;
+        margin-bottom: 15px;
+    }
+    table td{
+      height: 30px;
+    }
+
+    .hidden-content {
+        max-height: 0; /* Start with 0 height to hide content */
+        overflow: hidden; /* Hide content overflow */
+        background-color: white;
+        transition: all 0.3s ease-in-out; /* Smooth transition for height change */
+        padding-left: 10px;
+    }
+    
+    .expanded {
+          padding: 10px;
+        max-height: none; /* Set a specific max-height for expanded content */
+      }
+      
+      .click-area {
+        padding: 10px;
+        padding-top: 20px;
+        min-height: 30px;
+        cursor: pointer;
+        background-color: #ececec;
+        border-radius: 2px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        width: calc(100% - 20px);
+      }
+      .click-area-head{
+        width: 100%;
+        display: flex;
+      }
+      .click-text-Block1,.click-text-Block3{
+        width: 20%;
+      }
+      .click-text-Block2,.click-text-Block4{
+        width: 30%;
+      }
+      .click-text-Block4 svg{
+       width: 24px;
+       height: 24px;
+      }
+      .click-text-Block4{
+        display: flex;
+        justify-content: space-around;
+      }
+      table{
+        width: calc(100% - 10px);
+        text-align: left;
+        color: #000000b9;
+      }
+      th{
+        font-weight: 600;
+
+      }
+      .pastCol1{
+        width: 60%;
+      }
+      .pastCol2{
+        width: 20%;
+      }
+      .pastCol3{
+        width: 20%;
+      }
+      .pastRemark{
+        margin-top: 30px;
+        text-align: center;
+      }
+
+
+
+
+      @media screen and (max-width:550px) {
+        .click-area-head{
+          font-size: 0.8rem;
+        }
+      }
+}
